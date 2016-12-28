@@ -121,6 +121,7 @@ function toggle_player() {
     }
     if (!you_won) {
         if (check_for_ties()) {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
             $(".notification_area").text("It's a cat's game! Aren't they all?!");  //display the text tie message
             clearInterval(turn_timer);              //stops the countdown timer
             $("#remaining_time").text("");          //blanks out the remaining time
@@ -146,9 +147,9 @@ function place_symbol_in_cell(target_cell, player_number) {
 
     var player_mark;
     if (player_number === 1) {
-        player_mark = "X";
+        player_mark = "USA";
     } else {
-        player_mark = "O";
+        player_mark = "COS";
     }
     target_cell.text(player_mark);
 }
@@ -209,12 +210,14 @@ function check_for_wins(clicked_row, clicked_column) {
     //Indicate player has won
     function notify_player_won() {
         if (you_won === true && its_player_ones_turn === true) {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
             $(".notification_area").text("Space Cat Wins!");
             blinker();
             $("#countdown").hide();
             $("#timer").hide();
             endOfGame = true;
         } else if (you_won === true && its_player_ones_turn !== true) {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
             $(".notification_area").text("Cosmonaut Cat Wins!");
             blinker();
             $("#countdown").hide();

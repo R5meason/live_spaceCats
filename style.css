@@ -1,7 +1,6 @@
 /* Global Styles */
 body {
     margin: 0;
-    /*background-color: black;*/
     background-image: url("img/bodyBG.png");
 }
 
@@ -14,7 +13,6 @@ h1 {
 /* Main Game Area */
 .wrapper {
     height: 100%;
-    /*background-color: #040508;*/
     background-color: transparent;
 }
 
@@ -118,7 +116,6 @@ font-size: 1.3em;
 /* notification_area */
 .notification_area {
     height: 10%;
-    /*background-color: #000000;*/
     background-color: transparent;
     text-align: center;
     color: white;
@@ -136,22 +133,24 @@ font-size: 1.3em;
     text-align: center;
     font-size: 0;
     height: 100%;
+    margin-bottom: 1%;
 }
 
 /* This is the area plays click on */
 .selection_box {
     display: inline-block;
-    width: 2vw;
-    height: 3vw;
-    /*background-color: #040508;*/
+    width: 3vw;
+    height: 7vh;
     background-color: transparent;
-    color: #ffffff;
+    color: yellow;
     border: 1px solid white;
     vertical-align: bottom;
-    font-size: 5vh;
+    font-size: 2.5vh;
     text-align: center;
-    padding: 1%;
-}
+    padding: 2% 0.5% 0 0.5%;
+    font-weight: bold;
+    font-family: sans-serif;
+ }
 
 /* .modal is referring to the screen/window that pops up when New Game is clicked */
 .modalDialog {
@@ -254,7 +253,7 @@ a.close {
 }
 
 #welcome {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     border-radius: 5%;
     width: 65vw;
@@ -279,3 +278,4 @@ a.close {
 #welcome_blue {
     color: mediumblue;
 }
+
