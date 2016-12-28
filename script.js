@@ -52,6 +52,7 @@ function create_game_board() {
             var cell = $('<div>').addClass('cell').attr('row', row).attr('column', column).addClass('selection_box');      //create the cell DOM element with attributes row and column
             row_of_divs.append(cell);         //append the cell to the row
         }
+        $('#welcome').hide();
         $('.game_board').append(row_of_divs); //append the row to the game board
         $("#countdown").show();
         $("#timer").show();
@@ -120,7 +121,7 @@ function toggle_player() {
     }
     if (!you_won) {
         if (check_for_ties()) {
-            $(".notification_area").text("It's a cat's game!! Aren't they all?!");  //display the text tie message
+            $(".notification_area").text("It's a cat's game! Aren't they all?!");  //display the text tie message
             clearInterval(turn_timer);              //stops the countdown timer
             $("#remaining_time").text("");          //blanks out the remaining time
             $('.selection_box').unbind();           //disables further clicks in the game area
@@ -205,17 +206,16 @@ function check_for_wins(clicked_row, clicked_column) {
     var matches_connected = null;
 
 
-
     //Indicate player has won
     function notify_player_won() {
         if (you_won === true && its_player_ones_turn === true) {
-            $(".notification_area").text("SPACE CAT Wins!!");
+            $(".notification_area").text("Space Cat Wins!");
             blinker();
             $("#countdown").hide();
             $("#timer").hide();
             endOfGame = true;
         } else if (you_won === true && its_player_ones_turn !== true) {
-            $(".notification_area").text("Congratulations Comrade.  You won!");
+            $(".notification_area").text("Cosmonaut Cat Wins!");
             blinker();
             $("#countdown").hide();
             $("#timer").hide();

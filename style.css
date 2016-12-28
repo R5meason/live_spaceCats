@@ -1,7 +1,8 @@
 /* Global Styles */
 body {
     margin: 0;
-    background-color: black;
+    /*background-color: black;*/
+    background-image: url("img/bodyBG.png");
 }
 
 h1 {
@@ -13,7 +14,8 @@ h1 {
 /* Main Game Area */
 .wrapper {
     height: 100%;
-    background-color: #040508;
+    /*background-color: #040508;*/
+    background-color: transparent;
 }
 
 /* Navigation Area */
@@ -37,14 +39,21 @@ header {
 .player1_name {
     width: 100%;
     height: 60px;
-    background-color: black;
+    background-color: transparent;
     position: absolute;
     bottom: 0px;
     text-align: center;
-    line-height: 60px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 1.3em;
     color: white;
     font-family: 'Faster One', cursive;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5%;
+}
+
+#p2Cat{
+font-size: 1.3em;
 }
 
 .player2_side {
@@ -60,7 +69,7 @@ header {
 .player2_name {
     width: 100%;
     height: 60px;
-    background-color: black;
+    background-color: transparent;
     position: absolute;
     bottom: 0px;
     text-align: center;
@@ -68,6 +77,9 @@ header {
     font-size: 16px;
     color: white;
     font-family: 'Faster One', cursive;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5%;
 }
 
 .current_player {
@@ -106,7 +118,8 @@ header {
 /* notification_area */
 .notification_area {
     height: 10%;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: transparent;
     text-align: center;
     color: white;
     font-size: 2em;
@@ -122,7 +135,7 @@ header {
 .game_board {
     text-align: center;
     font-size: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 /* This is the area plays click on */
@@ -130,7 +143,8 @@ header {
     display: inline-block;
     width: 2vw;
     height: 3vw;
-    background-color: #040508;
+    /*background-color: #040508;*/
+    background-color: transparent;
     color: #ffffff;
     border: 1px solid white;
     vertical-align: bottom;
@@ -237,4 +251,31 @@ a.close {
     width: 95%;
     margin-top: -3%;
     position: absolute;
+}
+
+#welcome {
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5%;
+    width: 65vw;
+    height: 55vh;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: transparent;
+}
+
+.welcome {
+    font-family: 'Faster One', sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+#welcome_yellow {
+    color: yellow;
+}
+
+#welcome_blue {
+    color: mediumblue;
 }
