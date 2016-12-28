@@ -126,7 +126,7 @@ font-size: 1.3em;
 .game_board {
     text-align: center;
     font-size: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 /* This is the area plays click on */
