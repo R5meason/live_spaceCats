@@ -41,10 +41,14 @@ header {
     position: absolute;
     bottom: 0px;
     text-align: center;
-    line-height: 60px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 1.3em;
     color: white;
     font-family: 'Faster One', cursive;
+}
+
+#p2Cat{
+font-size: 1.3em;
 }
 
 .player2_side {
