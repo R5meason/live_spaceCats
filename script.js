@@ -209,13 +209,13 @@ function check_for_wins(clicked_row, clicked_column) {
     //Indicate player has won
     function notify_player_won() {
         if (you_won === true && its_player_ones_turn === true) {
-            $(".notification_area").text("SPACE CAT Wins!!");
+            $(".notification_area").text("Space Cat Wins!");
             blinker();
             $("#countdown").hide();
             $("#timer").hide();
             endOfGame = true;
         } else if (you_won === true && its_player_ones_turn !== true) {
-            $(".notification_area").text("Congratulations Comrade.  You won!");
+            $(".notification_area").text("Cosmonaut Cat Wins!");
             blinker();
             $("#countdown").hide();
             $("#timer").hide();
