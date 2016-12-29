@@ -145,7 +145,7 @@ font-size: 1.3em;
     color: yellow;
     border: 1px solid white;
     vertical-align: bottom;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-align: center;
     padding: 2% 0.5% 0 0.5%;
     font-weight: bold;
@@ -167,6 +167,13 @@ font-size: 1.3em;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+}
+
+#modalExit{
+    font-family: sans-serif;
+    color: darkgrey;
+    font-size: 0.5em;
+    font-weight: normal;
 }
 
 .modalDialog:target {
