@@ -34,7 +34,18 @@ $(document).ready(function () {
     });
     $("#countdown").hide();
     $("#timer").hide();
+
 });
+
+var manageModal = function(visibility){
+  if (visibility === 'hide'){
+      $("#openModal").hide();
+  }
+  else if (visibility === 'show'){
+      $("#openModal").show();
+  }
+
+};
 
 function create_game_board() {
     stored_game_data = [];      //reset stored_game_data to blank array

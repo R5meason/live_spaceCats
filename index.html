@@ -27,21 +27,21 @@
         <div id="openModal" class="modalDialog">
             <div>
                 <h2>Choose Board Size:</h2>
-                <a href="#close" class="close">
+                <span onclick="manageModal('hide')" class="close">
                     <button onclick="set_game_board_size(3)">
                         3x3
                     </button>
-                </a>
-                <a href="#close" class="close">
+                </span>
+                    <span onclick="manageModal('hide')" class="close">
                     <button onclick="set_game_board_size(9)">
                         9x9
                     </button>
-                </a>
-                <a href="#close" class="close">
+                </span>
+                <span onclick="manageModal('hide')" class="close">
                     <button onclick="set_game_board_size(20)">
                         20x20
                     </button>
-                </a>
+                </span>
             </div>
         </div>
         <!-- end board size pop-up -->
@@ -69,11 +69,11 @@
         Toggle soundtrack by clicking <span class="welcome">Music On/Off</span> above.
         <br><br>
         <img src="img/flag_US.png" width="24" align="bottom">
-            <span id="welcome_blue">Space Cat is Player 1 - "USA"</span>
+        <span id="welcome_blue">Space Cat is Player 1 - "USA"</span>
         <img src="img/flag_US.png" width="24" align="bottom">
         <br><br>
         <img src="img/flag_RU.png" width="24" align="bottom">
-            <span id="welcome_yellow">Cosmonaut Cat is Player 2 - "COS"</span>
+        <span id="welcome_yellow">Cosmonaut Cat is Player 2 - "COS"</span>
         <img src="img/flag_RU.png" width="24" align="bottom">
         <br><br>
         Make your move before the <span id="welcome_blue">Moon Timer</span> reaches zero, or you lose a turn -
